@@ -11,12 +11,11 @@ export default function Nav() {
   return (
     <div>
       <SectionsContainer {...options} >
-
-        <Section><One /></Section>
-        <Section><Two /></Section>
-        <Section>Page 3s</Section>
-
-
+        <Section><WhoAmI /></Section>
+        <Section><Experiences /></Section>
+        <Section><Skills /></Section>
+        <Section><Projects /></Section>
+        <Section><Contact /></Section>
       </SectionsContainer>
     </div >
 
