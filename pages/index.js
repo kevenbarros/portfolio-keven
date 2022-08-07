@@ -1,10 +1,5 @@
 
-import styles from '../styles/Home.module.css'
-import { MouseParallax, ScrollParallax } from "react-just-parallax";
-import ReactFullpage from "react-fullpage";
-import { SectionsContainer, Section } from 'react-fullpage';
-import One from './one';
-import Two from './two';
+
 import style from "../styles/Home.module.css"
 import Nav from './nav';
 export default function Home() {
