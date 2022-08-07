@@ -1,22 +1,23 @@
-
-import style from '../styles/Home.module.css'
-import { MouseParallax, ScrollParallax } from "react-just-parallax";
-import ReactFullpage from "react-fullpage";
 import { SectionsContainer, Section } from 'react-fullpage';
-import One from './one';
-import Two from './two';
+import WhoAmI from './components/home/WhoAmI';
+import Experiences from './components/home/Experiences';
+import Skills from './components/home/Skills';
+import Projects from './components/home/Projects';
+import Contact from './components/home/Contact';
 export default function Nav() {
   let options = {
-    anchors: ['sectionOne', 'sectionTwo', 'sectionThree'],
+    anchors: ['WhoAmI', 'Experiences', 'Skills', 'Projects', 'Contact'],
   };
   return (
     <div>
       <SectionsContainer {...options} >
+
         <Section><One /></Section>
         <Section><Two /></Section>
         <Section>Page 3s</Section>
-      </SectionsContainer>
 
+
+      </SectionsContainer>
     </div >
 
   )
