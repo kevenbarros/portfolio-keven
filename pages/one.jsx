@@ -10,7 +10,7 @@ export default function One() {
   return (
     <div className={styles.one} onScroll={(e) => teste(e)} id="one2">
 
-      <div className={styles.bomDia}> <MouseParallax><h1>oi</h1></MouseParallax></div>
+      <div className={styles.bomDia}> <MouseParallax><h1>oid</h1></MouseParallax></div>
     </div>
   )
 }

@@ -9,8 +9,8 @@ export default function Home() {
     navigation: false
   };
   return (
-    <div className={style.r}>
-      <div className={style.nav}>
+    <div className={style.mainContainer}>
+      <div className={style.mainNavigation}>
 
       </div>
       <div className={style.dalhe}>
