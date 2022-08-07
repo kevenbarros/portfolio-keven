@@ -14,7 +14,7 @@ export default function Nav() {
       <SectionsContainer {...options} >
         <Section><One /></Section>
         <Section><Two /></Section>
-        <Section>Page 3</Section>
+        <Section>Page 3s</Section>
       </SectionsContainer>
 
     </div >
