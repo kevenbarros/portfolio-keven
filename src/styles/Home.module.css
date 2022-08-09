@@ -4,7 +4,31 @@
   grid-template-rows: 1;
   width: 100%;
   background-color: brown;
+  cursor: none;
 }
+
+.cursorBox {
+  position: absolute;
+  border: 2px solid #061A30;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cursorBoxinternal {
+  background-color: #061A30;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 100%;
+}
+
+.cursorBoxinternalOverNav .cursorBoxOverNav {
+  background-color: #ffff;
+}
+
 
 .dalhe {
   width: 100%;
