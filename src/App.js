@@ -1,7 +1,10 @@
 import { useEffect } from "react";
 import Nav from "./pages/home/Nav";
+import MenuIcon from "./components/icons/Menu";
 import styles from "./styles/Home.module.css"
+import { useState } from "react";
 function App() {
+  const [menuMobile, setMenuMobile] = useState(false)
   useEffect(() => {
     mouseEdit()
   }, [])
@@ -14,7 +17,6 @@ function App() {
     }
   }
   function mouseOutNav() {
-    console.log('saiu')
     const cursorRounded = document.getElementById('cursorBox');
     const cursorBoxinternal = document.getElementById('cursorBoxinternal')
     if (cursorRounded) {
@@ -38,14 +40,17 @@ function App() {
 
   return (
     <div className={styles.mainContainer}>
-      <div className={styles.mainNavigation} onMouseOver={mouseOverNav} id="navBox">
+      <div className={`${styles.mainNavigation} ${menuMobile ? styles.activeMenu : ''}`} onMouseOver={mouseOverNav} id="navBox">
       </div>
-      <div className={styles.dalhe} onMouseOver={mouseOutNav}>
+      <div className={styles.mainContent} onMouseOver={mouseOutNav}>
         <Nav />
       </div>
       <div className={styles.cursorBox} id="cursorBox">
         <div className={styles.cursorBoxinternal} id="cursorBoxinternal">
         </div>
+      </div>
+      <div className={styles.mainNavigationMobile} onClick={() => setMenuMobile(!menuMobile)}>
+        <MenuIcon fill={menuMobile ? '#fff' : '#061A30'} />
       </div>
     </div >
   );

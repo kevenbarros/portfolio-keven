@@ -7,7 +7,9 @@ export default function Contact() {
   return (
     <div className={styles.contactBox} >
 
-      <div className={styles.bomDia}><Button /> <MouseParallax><h1>{t("teste1")}</h1></MouseParallax></div>
+      <div className={styles.bomDia}>
+        <Button /> <MouseParallax><h1>{t("teste1")}</h1></MouseParallax>
+      </div>
     </div>
   )
 }

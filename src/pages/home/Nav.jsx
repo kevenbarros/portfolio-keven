@@ -7,7 +7,8 @@ import Contact from './Contact'
 function Nav() {
   let options = {
     anchors: ['WhoAmI', 'Experiences', 'Skills', 'Projects', 'Contact'],
-
+    arrowNavigation: true,
+    navigation: false
   };
   return (
     <div className="App">
@@ -27,7 +28,6 @@ function Nav() {
         <Section>
           <Contact />
         </Section>
-
       </SectionsContainer>
     </div>
   );
