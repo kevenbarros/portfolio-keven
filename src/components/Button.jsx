@@ -1,12 +1,14 @@
-import styles from '../../styles/home/skills.module.scss'
+import styles from '../styles/components/button.module.scss'
 
 
 export default function Button() {
 
   return (
-    <div className={styles.skillsBox} >
+    <div className={styles.buttonBox} >
+      <button className={styles.button}>
+        Vamos bater um papo!!
+      </button>
 
-      <div className={styles.bomDia}> <MouseParallax><h1>Skills</h1></MouseParallax></div>
     </div>
   )
 }

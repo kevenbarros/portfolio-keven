@@ -4,7 +4,7 @@
   grid-template-rows: 1;
   width: 100%;
   background-color: brown;
-  cursor: none;
+  /* cursor: none; */
 }
 
 .cursorBox {
