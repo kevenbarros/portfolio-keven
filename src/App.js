@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import Nav from "./pages/home/Nav";
-import MenuIcon from "./components/icons/Menu";
 import styles from "./styles/Home.module.css"
 import { useState } from "react";
 function App() {
@@ -49,8 +48,10 @@ function App() {
         <div className={styles.cursorBoxinternal} id="cursorBoxinternal">
         </div>
       </div>
-      <div className={styles.mainNavigationMobile} onClick={() => setMenuMobile(!menuMobile)}>
-        <MenuIcon fill={menuMobile ? '#fff' : '#061A30'} />
+      <div className={`${styles.mainNavigationMobile} ${menuMobile ? styles.active : ''}`} onClick={() => setMenuMobile(!menuMobile)}>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div >
   );
