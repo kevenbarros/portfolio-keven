@@ -44,9 +44,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .menuTitleBox {
-    padding: 100px 0;
-  }
 
   .menuTitleBox a {
     padding: 0 10px;
