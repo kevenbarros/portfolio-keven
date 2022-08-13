@@ -1,6 +1,15 @@
 {
   "contact":{
-    "titleForm" : "Podemos marcar um café?"
+    "titleForm" : "Podemos marcar um café?",
+    "lableName" : "Nome Completo",
+    "labeleEmail" : "E-mail",
+    "lableMessage" :"Mensagem",
+    "button":"Vamos bater um papo!!",
+    "placeholder" : {
+      "name": "Digite seu nome",
+      "email": "Digite seu endereço de E-mail",
+      "description": "Escreva sua mensagem"
+    }
   },
   "menu":{
     "whoIAm" : "Quem eu sou !!",
