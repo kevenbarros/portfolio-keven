@@ -1,8 +1,8 @@
 .menuBox {
-  padding: 100px 40px 0 40px;
+  padding: 100px 40px 0px 40px;
   display: flex;
   flex-direction: column;
-  height: 85vh;
+  height: calc(100vh - 200px);
 }
 
 .menuTitleBox {
@@ -35,7 +35,7 @@
 }
 
 .contatosBox {
-  padding: 0 30px;
+  padding: 0 10px;
 }
 
 .contatosBox img {
@@ -44,6 +44,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
 
   .menuTitleBox a {
     padding: 0 10px;
