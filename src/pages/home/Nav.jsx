@@ -4,16 +4,30 @@ import Experiences from './Experiences'
 import Skills from './Skills'
 import Projects from './Projects'
 import Contact from './Contact'
+
 function Nav() {
   let options = {
-    anchors: ['WhoAmI', 'Experiences', 'Skills', 'Projects', 'Contact'],
+    anchors: ['WhoIAm', 'Experiences', 'Skills', 'Projects', 'Contact'],
     arrowNavigation: true,
-    navigation: false
+    navigation: false,
   };
+  const handleScroll = () => {
+    const timeOut = setTimeout(() => {
+      teste()
+    }, 1000);
+  }
+  function teste() {
+    let path = window.location.hash.replace('#', '')
+    path = path[0].toLowerCase() + path.slice(1)
+    const section = document.getElementById(path)
+    const classDom = document.querySelector('.Section')
+    if (classDom) classDom.classList.remove('Section')
+    if (section) section.classList.add('Section')
+  }
   return (
-    <div className="App">
-      <SectionsContainer {...options}>
-        <Section>
+    <div className="App" onWheel={() => handleScroll()} >
+      <SectionsContainer  {...options}>
+        <Section >
           <WhoAmI />
         </Section>
         <Section>

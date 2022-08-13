@@ -1,5 +1,12 @@
 {
   "contact":{
     "titleForm" : "Can we arrange a coffee?"
+  },
+  "menu":{
+    "whoIAm" : "Who i am !!",
+    "experiences" : "Experiences",
+    "skills" : "Skills",
+    "projects" : "Projects",
+    "Contact" : "Contact"
   }
 }

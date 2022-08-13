@@ -1,0 +1,42 @@
+.menuBox {
+  padding: 100px 40px 0 40px;
+  display: flex;
+  align-items: center;
+}
+
+.menuTitleBox {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100%;
+  width: 100%;
+
+}
+
+.menuTitleBox a {
+  text-decoration: none;
+  padding: 0 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #EBEBD3;
+  cursor: pointer;
+}
+
+.menuTitleBox a:hover {
+  border-left: 4px solid #F4D35E;
+  margin-left: -4px;
+}
+
+.Section {
+  background-color: #F4D35E;
+  color: #EBEBD3;
+}
+
+@media screen and (max-width: 768px) {
+  .menuTitleBox h3 {
+    padding: 0 10px;
+    font-size: 32 px;
+  }
+
+}

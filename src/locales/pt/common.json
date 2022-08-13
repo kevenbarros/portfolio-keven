@@ -1,5 +1,12 @@
 {
   "contact":{
     "titleForm" : "Podemos marcar um café?"
+  },
+  "menu":{
+    "whoIAm" : "Quem eu sou !!",
+    "experiences" : "Experiências",
+    "skills" : "Skills",
+    "projects" : "Projetos",
+    "Contact" : "Contato"
   }
 }
