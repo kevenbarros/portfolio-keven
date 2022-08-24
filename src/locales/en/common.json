@@ -1,7 +1,30 @@
 {
   "contact":{
-    "titleForm" : "Can we arrange a coffee?"
+    "titleForm" : "Can we arrange a coffee?",
+    "lableName" : "Full Name",
+    "labelEmail" : "Email",
+    "lableMessage" :"Message",
+    "button":"Let's chat!!",
+    "placeholder" : {
+      "name": "Enter your name",
+      "email": "Enter your E-mail address",
+      "description": "Write your message"
+    }
   },
+  
+  "whoAmI":{
+    "title": "HEY! I'm Keven William",
+    "subTitle": "Graduating at the Federal University of Pará, I'm 21 years old and I've been in the Front-End area for 2 years",
+    "MyGoals":{
+      "title":"My goals",
+      "subTitle":"Meus objetivos profissionais são Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "MyHobbies":{
+      "title":"My hobbies",
+      "subTitle":"My professional goals are Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  },
+
   "menu":{
     "whoIAm" : "Who i am !!",
     "experiences" : "Experiences",

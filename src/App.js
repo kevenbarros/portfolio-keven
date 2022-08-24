@@ -58,10 +58,10 @@ function App() {
         <div className="menuBox">
           <div className="menuTitleBox">
             <a href="/#WhoIAm" onClick={() => sectionSwitch('whoIAm')} id="whoIAm">{t('menu.whoIAm')}</a>
-            <a href="/#Experiences" onClick={() => sectionSwitch('experiences')} id="experiences">{t('experiences')}</a>
-            <a href="/#Skills" onClick={() => sectionSwitch('skills')} id="skills">{t('skills')} </a>
-            <a href="/#Projects" onClick={() => sectionSwitch('projects')} id="projects">{t('projects')}</a>
-            <a href="/#Contact" onClick={() => sectionSwitch('contact')} id="contact">{t('Contact')}</a>
+            <a href="/#Experiences" onClick={() => sectionSwitch('menu.experiences')} id="experiences">{t('menu.experiences')}</a>
+            <a href="/#Skills" onClick={() => sectionSwitch('skills')} id="skills">{t('menu.skills')} </a>
+            <a href="/#Projects" onClick={() => sectionSwitch('projects')} id="projects">{t('menu.projects')}</a>
+            <a href="/#Contact" onClick={() => sectionSwitch('contact')} id="contact">{t('menu.Contact')}</a>
           </div>
           <div className="contatosBox">
             <img src={git} alt="Logo github" onClick={() => goToGitPage()} />

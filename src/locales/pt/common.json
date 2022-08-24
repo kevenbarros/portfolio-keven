@@ -11,6 +11,22 @@
       "description": "Escreva sua mensagem"
     }
   },
+  
+  "whoAmI":{
+    "title": "HEY! Sou Keven William",
+    "subTitlePt1": "Formando na Universidade Federal do Pará,",
+    "subTitlePt2":" Tenho 21 anos e estou na área de ",
+    "subTitlePt3":"Front-End a 2 anos.",
+    "MyGoals":{
+      "title":"Meus Objetivos",
+      "subTitle":"Meus objetivos profissionais são Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "MyHobbies":{
+      "title":"My hobbies",
+      "subTitle":"My professional goals are Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  },
+
   "menu":{
     "whoIAm" : "Quem eu sou !!",
     "experiences" : "Experiências",
