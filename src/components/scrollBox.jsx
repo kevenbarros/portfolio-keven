@@ -20,6 +20,9 @@ const ScrollBoxContainer = ({ children }) => {
         ref={divRef}
         onMouseOver={() => checkVisible()}
         onMouseOut={() => checkVisible()}
+        onTouchMove={() => checkVisible()}
+        onTouchStart={() => checkVisible()}
+        onTouchEnd={() => checkVisible()}
         style={{ cursor: grab() }}
         className={styles.box}
       >
