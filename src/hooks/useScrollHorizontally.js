@@ -14,7 +14,14 @@ const useScrollHorizontally = (element) => {
     // Momentum
     let velX = 0
     let momentumID = 0
-
+    const mouseTouchDownFunction = (e) => {
+      const targetElement = e
+      isDown = true
+      setIsGrabbing(true)
+      startX = targetElement.changedTouches[0].pageX - current.offsetLeft
+      scrollLeft = current.scrollLeft
+      cancelMomentumTracking()
+    }
     const mouseDownFunction = (e) => {
       const targetElement = e
       isDown = true
@@ -23,16 +30,34 @@ const useScrollHorizontally = (element) => {
       scrollLeft = current.scrollLeft
       cancelMomentumTracking()
     }
-
+    const mouseTouchLeaveFunction = () => {
+      isDown = false
+      setIsGrabbing(false)
+    }
     const mouseLeaveFunction = () => {
       isDown = false
       setIsGrabbing(false)
     }
-
+    const mouseTouchUpFunction = () => {
+      isDown = false
+      setIsGrabbing(false)
+      beginMomentumTracking()
+    }
     const mouseUpFunction = () => {
       isDown = false
       setIsGrabbing(false)
       beginMomentumTracking()
+    }
+    const mouseTouchFunction = (e) => {
+      const targetElement = e
+
+      if (!isDown) return
+      // targetElement.preventDefault()
+      const x = targetElement.changedTouches[0].pageX - current.offsetLeft
+      const walk = (x - startX) * 3 //scroll-fast
+      let prevScrollLeft = current.scrollLeft
+      current.scrollLeft = scrollLeft - walk
+      velX = current.scrollLeft - prevScrollLeft
     }
 
     const mouseMoveFunction = (e) => {
@@ -74,6 +99,11 @@ const useScrollHorizontally = (element) => {
     current.addEventListener('mouseup', mouseUpFunction)
     current.addEventListener('mousemove', mouseMoveFunction)
     current.addEventListener('wheel', wheelFunction)
+    current.addEventListener('touchmove', mouseTouchFunction)
+    current.addEventListener('touchend', mouseTouchUpFunction)
+    current.addEventListener('touchstart', mouseTouchDownFunction)
+    current.addEventListener('touchcancel', mouseTouchLeaveFunction)
+
 
     return () => {
       current.removeEventListener('mousedown', mouseDownFunction)
@@ -81,6 +111,10 @@ const useScrollHorizontally = (element) => {
       current.removeEventListener('mouseup', mouseUpFunction)
       current.removeEventListener('mousemove', mouseMoveFunction)
       current.removeEventListener('wheel', wheelFunction)
+      current.removeEventListener('touchmove', mouseTouchFunction)
+      current.removeEventListener('touchend', mouseTouchUpFunction)
+      current.removeEventListener('touchstart', mouseTouchDownFunction)
+      current.removeEventListener('touchcancel', mouseTouchLeaveFunction)
     }
   }, [element])
 

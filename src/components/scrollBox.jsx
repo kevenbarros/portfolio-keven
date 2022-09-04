@@ -8,9 +8,6 @@ const ScrollBoxContainer = ({ children }) => {
   const divRef = useRef(null)
   const { isGrabbing } = useScrollHorizontallyMomentum(divRef)
   const { checkVisible, currentBullet, showBullets, bulletsArray } = useDynamicBulltes(divRef)
-  useEffect(() => {
-    console.log(showBullets)
-  }, [showBullets])
   function grab() {
     if (!isGrabbing) {
       return 'grab'
@@ -22,7 +19,7 @@ const ScrollBoxContainer = ({ children }) => {
       <div
         ref={divRef}
         onMouseOver={() => checkVisible()}
-        onmouseout={() => checkVisible()}
+        onMouseOut={() => checkVisible()}
         style={{ cursor: grab() }}
         className={styles.box}
       >

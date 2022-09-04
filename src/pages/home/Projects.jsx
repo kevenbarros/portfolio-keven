@@ -27,7 +27,6 @@ export default function Projects() {
     const width = dom.offsetWidth + 70;
     const diff = (width - screenSize) / 2
     const spaceLess = diff
-
     if (screenSize <= 1440 && screenSize >= 1060) {
       if (divRef.current) {
         divRef.current.style.width = `calc(100% - ${190 - spaceLess}px)`
@@ -49,7 +48,7 @@ export default function Projects() {
                   style={{ backgroundImage: `url(${projeto.img})` }}
                 >
                   <div className={styles.contentTextCard} >
-                    <div className={styles.textCard}>
+                    <div className={styles.textCard} onT>
                       <h3 className={projeto.color == "white" && styles.colorWhite}>{projeto.title}</h3>
                       <h4 className={projeto.color == "white" && styles.colorWhite}>{projeto.subTitle}</h4>
                     </div>

@@ -24,7 +24,6 @@
 
 //card
 .card{
-  // background-image: url('../../images/rick.png');
   width: 350px;
   min-width: 350px;
   height: 400px;
@@ -36,7 +35,7 @@
 }
 .contentTextCard{
   width: 80%;
-  padding:0  2rem;
+  padding:0 2rem 0 2rem;
 }
 .textCard{
   position: absolute;
@@ -61,4 +60,9 @@
 }
 .colorWhite{
   color: #FFFFFF !important;
+}
+@media screen and (max-width: 1394px) {
+  .card{
+    
+  }
 }
