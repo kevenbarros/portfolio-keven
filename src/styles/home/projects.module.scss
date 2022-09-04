@@ -6,3 +6,59 @@
   justify-content: center;
   align-items: center;
 }
+.projectsContent{
+  width: 100%;
+  height: 80%;
+}
+.ProjectsBoxCarousel{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.ProjectsContentCarousel{
+  position: absolute;
+  width: 100%;
+  top: 10%;
+}
+
+//card
+.card{
+  // background-image: url('../../images/rick.png');
+  width: 350px;
+  min-width: 350px;
+  height: 400px;
+  padding: 8px ;
+  border-radius: 14px;
+  position: relative;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-size: cover !important;
+}
+.contentTextCard{
+  width: 80%;
+  padding:0  2rem;
+}
+.textCard{
+  position: absolute;
+  bottom: 0px;
+  h3{
+    color: #061A30;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    padding-right: 2rem;
+
+  }
+  h4{
+    color: #061A30;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding-right: 2rem;
+
+  }
+}
+.colorWhite{
+  color: #FFFFFF !important;
+}

@@ -22,7 +22,7 @@ export default function Contact() {
           </div>
           <div>
             <label htmlFor="">{t("contact.lableMessage")}</label>
-            <textarea name="message" id="" maxlength="30" cols="30" rows="8" placeholder={t("contact.placeholder.description")}></textarea>
+            <textarea name="message" id="" maxlength="30" cols="30" rows="4" placeholder={t("contact.placeholder.description")}></textarea>
           </div>
           <button className={styles.button} >{t('contact.button')}</button>
         </form>
