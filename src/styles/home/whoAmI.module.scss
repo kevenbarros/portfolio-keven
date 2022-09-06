@@ -125,3 +125,24 @@
     transform: rotate(-180deg);
   }
 }
+@media screen and (max-width: 500px) {
+  .chestOfDrawers{
+    div{
+      h4{
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .subTitle{
+    font-size: 15px;
+  }
+  .active{
+    font-size: 12px;
+  }
+  .titleName{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+}
