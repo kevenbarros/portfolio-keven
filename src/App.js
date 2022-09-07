@@ -10,40 +10,6 @@ import { t } from "i18next";
 
 function App() {
   const [menuMobile, setMenuMobile] = useState(false)
-  // useEffect(() => {
-  //   mouseEdit()
-  // }, [])
-  // function mouseOverNav() {
-  //  onMouseOver={mouseOverNav}
-  //   const cursorRounded = document.getElementById('cursorBox');
-  //   const cursorBoxinternal = document.getElementById('cursorBoxinternal')
-  //   if (cursorRounded) {
-  //     cursorRounded.style.borderColor = '#ffff';
-  //     cursorBoxinternal.style.backgroundColor = '#ffff';
-  //   }
-  // }
-  // function mouseOutNav() {
-  // onMouseOver={mouseOutNav}
-  //   const cursorRounded = document.getElementById('cursorBox');
-  //   const cursorBoxinternal = document.getElementById('cursorBoxinternal')
-  //   if (cursorRounded) {
-  //     cursorRounded.style.borderColor = '#061A30';
-  //     cursorBoxinternal.style.backgroundColor = '#061A30';
-  //   }
-  // }
-  // function mouseEdit() {
-  //   const cursorRounded = document.getElementById('cursorBox');
-
-  //   const moveCursor = (e) => {
-  //     let mouseY = e.clientY - 15;
-  //     let mouseX = e.clientX - 15;
-  //     if (cursorRounded) {
-  //       cursorRounded.style.top = `${mouseY}px`
-  //       cursorRounded.style.left = `${mouseX}px`
-  //     }
-  //   }
-  //   window.addEventListener('mousemove', moveCursor)
-  // }
   function sectionSwitch(section) {
     setMenuMobile(false)
     const classDom = document.querySelector('.Section')
@@ -58,7 +24,7 @@ function App() {
         <div className="menuBox">
           <div className="menuTitleBox">
             <a href="/#WhoIAm" onClick={() => sectionSwitch('whoIAm')} id="whoIAm">{t('menu.whoIAm')}</a>
-            <a href="/#Experiences" onClick={() => sectionSwitch('menu.experiences')} id="experiences">{t('menu.experiences')}</a>
+            <a href="/#Experiences" onClick={() => sectionSwitch('experiences')} id="experiences">{t('menu.experiences')}</a>
             <a href="/#Skills" onClick={() => sectionSwitch('skills')} id="skills">{t('menu.skills')} </a>
             <a href="/#Projects" onClick={() => sectionSwitch('projects')} id="projects">{t('menu.projects')}</a>
             <a href="/#Contact" onClick={() => sectionSwitch('contact')} id="contact">{t('menu.Contact')}</a>

@@ -2,29 +2,29 @@
   width: 100%;
   height: 100%;
   background-color: #F8B47B;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .expContent{
   width: 100%;
-  height: 70%;
+  height: 97%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 25% 25% 25% 25%;
 }
 .main{
-  position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  .oi{
-    position: absolute;
-    width: 100%;
-
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.imagem{
+  grid-column-start:4;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  img{
+    max-width: 400px;
   }
 }
-.div{
-  width: 350px;
-  min-width: 350px;
-  height: 285px;
-  background-color: aqua;
-  padding: 8px ;
-}   
+

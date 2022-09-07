@@ -11,7 +11,7 @@ export default function Contact() {
         <form action="https://api.staticforms.xyz/submit" method="POST" className={styles.formBox}>
           <input type="hidden" name="accessKey" value="a652af61-d092-4dce-85ff-b90bf4d0af65" />
           <input type="hidden" name="redirectTo" value="https://portfolio-keven.vercel.app/" />
-          <h3>{t('contact.titleForm')}</h3>
+          <h3 className={styles.title}>{t('contact.titleForm')}</h3>
           <div>
             <label htmlFor="">{t("contact.lableName")}</label>
             <input type="text" name="name" placeholder={t("contact.placeholder.name")} />

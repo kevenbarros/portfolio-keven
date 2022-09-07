@@ -13,10 +13,10 @@ function Nav() {
   };
   const handleScroll = () => {
     const timeOut = setTimeout(() => {
-      teste()
+      addClass()
     }, 1000);
   }
-  function teste() {
+  function addClass() {
     let path = window.location.hash.replace('#', '')
     path = path[0].toLowerCase() + path.slice(1)
     const section = document.getElementById(path)
