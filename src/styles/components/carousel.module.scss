@@ -7,7 +7,6 @@
 }
 .carousel{
   font-family: 'Poppins', sans-serif;
-
   h2{
     font-size: 18px;
     font-weight: 600;
@@ -27,4 +26,10 @@
     font-size: 24px;
     font-weight: 400;
   }
+}
+@media screen and (max-width: 1394px) {
+  p{
+    font-size: 18px;
+  }
+  
 }

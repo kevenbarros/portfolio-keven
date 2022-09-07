@@ -9,9 +9,9 @@ export default function Experiences() {
 
   return (
     <div className={styles.experiencesBox} >
+      <h1 className={styles.title}>Minhas experiências</h1>
       <div className={styles.expContent}>
         <main className={styles.main} id="mainTeste">
-
           <Carousel />
 
         </main>
