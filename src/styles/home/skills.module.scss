@@ -69,6 +69,9 @@
   display: none;
 }
 @media screen and (max-width: 1394px) {
+  .skillTitle{
+    font-size: 14px;  
+  }
   .skillContent{
     margin-top: 0.5rem;
     padding-right: 2rem;
@@ -89,5 +92,10 @@
     font-size: 40px;
     color: #061A30;
     margin: 0;
+  }
+}
+@media screen and (max-width: 350px) {
+  .skillTitle{
+    font-size: 12px;  
   }
 }
