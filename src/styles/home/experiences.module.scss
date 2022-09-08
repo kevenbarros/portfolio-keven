@@ -2,6 +2,7 @@
   width: 100%;
   height: 100%;
   background-color: #F8B47B;
+  overflow: hidden;
 }
 .expContent{
   width: 100%;
@@ -23,6 +24,7 @@
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
+  
   img{
     max-width: 400px;
   }
@@ -33,7 +35,7 @@
   padding-bottom: 10px ;
   display: none;
 }
-@media screen and (max-width: 1394px) {
+@media screen and (max-width: 800px) {
   .imagem{
     display: none;
   }

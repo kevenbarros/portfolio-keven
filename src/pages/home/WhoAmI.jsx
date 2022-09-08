@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import avatar from '../../images/avatar.png'
 import game from '../../images/controle.png'
 import Arrow from '../../images/Arrow.svg'
-import { useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 export default function WhoAmI() {
   const [modal, setModal] = useState('MyGoals')
@@ -15,6 +15,7 @@ export default function WhoAmI() {
     }
     setModal(id)
   }
+
   return (
     <div className={styles.whoAmIBox} >
       <div className={styles.whoAmIContent}>
@@ -50,7 +51,11 @@ export default function WhoAmI() {
         </main>
         <div className={styles.imgVarible}>
           <div>
-            <ScrollParallax className={styles.teste}><img src={modal === "MyHobbies" ? game : avatar} className={styles.imageIlustration} alt="" srcset="" /></ScrollParallax>
+            <ScrollParallax>
+              {modal === "MyHobbies" ?
+                <img style={{ maxWidth: '200px ' }} src={game} className={styles.effectImage && styles.effectImageControl} /> :
+                <img src={avatar} className={styles.imageIlustration && styles.effectImage} />}
+            </ScrollParallax>
           </div>
         </div>
       </div>

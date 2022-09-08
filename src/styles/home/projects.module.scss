@@ -19,10 +19,8 @@
 .ProjectsContentCarousel{
   position: absolute;
   width: 100%;
-  top: 10%;
+  top: 8%;
 }
-
-//card
 .card{
   width: 350px;
   min-width: 350px;
@@ -61,7 +59,7 @@
 .colorWhite{
   color: #FFFFFF !important;
 }
-@media screen and (max-width: 1394px) {
+@media screen and (max-width: 800px) {
   .card{
     width: 100%;
     min-width: 325px;
