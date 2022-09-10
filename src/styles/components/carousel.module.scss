@@ -28,8 +28,11 @@
   }
 }
 @media screen and (max-width: 1394px) {
+  .boxCarousel{
+    align-items: flex-start;
+  }
   p{
-    font-size: 18px;
+    font-size: 18px !important;
   }
   
 }
