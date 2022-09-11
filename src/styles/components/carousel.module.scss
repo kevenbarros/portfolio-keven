@@ -36,3 +36,23 @@
   }
   
 }
+@media screen and (max-width: 1394px) {
+  .boxCarousel{
+    align-items: flex-start;
+  }
+  p{
+    font-size: 18px !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  p{
+    font-size: 16px !important;
+  }
+  h2{
+    font-size: 16px !important;
+  }
+  h3{
+    font-size: 14px !important;
+  }
+}
