@@ -177,7 +177,6 @@ export default function Skills() {
 
         </main>
         <div className={styles.imageBox}>
-          <div></div>
           <div className={styles.imageContent}>
             <ScrollParallax>
               <img src={notbook} alt="" srcset="" />

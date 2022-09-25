@@ -13,7 +13,6 @@ export default function Experiences() {
       <div className={styles.expContent}>
         <main className={styles.main} id="mainTeste">
           <Carousel />
-
         </main>
         <div className={styles.imagem}>
           <img src={img} alt="" />
