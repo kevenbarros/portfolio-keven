@@ -22,7 +22,7 @@ export default function Skills() {
     },
     {
       title: "JavaScript",
-      percentage: 80,
+      percentage: 75,
     },
     {
       title: "React",
@@ -30,7 +30,7 @@ export default function Skills() {
     },
     {
       title: "Vue",
-      percentage: 80,
+      percentage: 75,
     },
     {
       title: "Git",
@@ -105,7 +105,7 @@ export default function Skills() {
           <div className={styles.skillCard}>
             <div className={styles.skillTitle}>
               <h2>HTML/CSS</h2>
-              <p>{html}%</p>
+              <p>80%</p>
             </div>
             <div>
               <div className={styles.barBack}>
@@ -117,7 +117,7 @@ export default function Skills() {
           <div className={styles.skillCard}>
             <div className={styles.skillTitle}>
               <h2>TypeScript</h2>
-              <p>{typeScript}%</p>
+              <p>32%</p>
             </div>
             <div>
               <div className={styles.barBack}>
@@ -129,7 +129,7 @@ export default function Skills() {
           <div className={styles.skillCard}>
             <div className={styles.skillTitle}>
               <h2>JavaScript</h2>
-              <p>{javaScript}%</p>
+              <p>75%</p>
             </div>
             <div>
               <div className={styles.barBack}>
@@ -141,7 +141,7 @@ export default function Skills() {
           <div className={styles.skillCard}>
             <div className={styles.skillTitle}>
               <h2>React js</h2>
-              <p>{react}%</p>
+              <p>70%</p>
             </div>
             <div>
               <div className={styles.barBack}>
@@ -153,7 +153,7 @@ export default function Skills() {
           <div className={styles.skillCard}>
             <div className={styles.skillTitle}>
               <h2>Vue js</h2>
-              <p>{vue}%</p>
+              <p>75%</p>
             </div>
             <div>
               <div className={styles.barBack}>
@@ -165,7 +165,7 @@ export default function Skills() {
           <div className={styles.skillCard}>
             <div className={styles.skillTitle}>
               <h2>Git/GitHub</h2>
-              <p>{git}%</p>
+              <p>85%</p>
             </div>
             <div>
               <div className={styles.barBack}>
