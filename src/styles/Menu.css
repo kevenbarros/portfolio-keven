@@ -32,6 +32,9 @@
 .Section {
   background-color: #F4D35E;
   color: #EBEBD3;
+  animation-name: progress;
+  animation-duration: 0.25s;
+  transition-timing-function: ease-in;
 }
 
 .contatosBox {
@@ -57,4 +60,64 @@
     font-size: 28px;
   }
 
+}
+
+@keyframes progress {
+  0% {
+    background: linear-gradient(90deg, rgba(244, 211, 94, 1) 0%, rgba(6, 26, 48, 1) 5%);
+  }
+
+  5% {
+    background: linear-gradient(90deg, rgba(244, 211, 94, 1) 5%, #061A30 10%);
+  }
+
+  10% {
+    background: linear-gradient(90deg, #F4D35E 10%, #061A30 15%);
+
+  }
+
+  15% {
+    background: linear-gradient(90deg, #F4D35E 15%, #061A30 20%);
+  }
+
+  20% {
+    background: linear-gradient(90deg, #F4D35E 20%, #061A30 25%);
+
+  }
+
+  25% {
+    background: linear-gradient(90deg, #F4D35E 25%, #061A30 30%);
+  }
+
+  30% {
+    background: linear-gradient(90deg, #F4D35E 30%, #061A30 35%);
+  }
+
+  40% {
+    background: linear-gradient(90deg, #F4D35E 40%, #061A30 45%);
+  }
+
+  50% {
+    background: linear-gradient(90deg, #F4D35E 50%, #061A30 55%);
+  }
+
+  60% {
+    background: linear-gradient(90deg, #F4D35E 60%, #061A30 65%);
+  }
+
+  70% {
+    background: linear-gradient(90deg, #F4D35E 70%, #061A30 75%);
+  }
+
+  80% {
+    background: linear-gradient(90deg, #F4D35E 80%, #061A30 85%);
+  }
+
+  90% {
+    background: linear-gradient(90deg, #F4D35E 90%, #061A30 95%);
+  }
+
+  90% {
+    background: linear-gradient(90deg, #F4D35E 100%, #061A30 100%);
+  }
 }

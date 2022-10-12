@@ -8,14 +8,14 @@
 .carousel{
   font-family: 'Poppins', sans-serif;
   h2{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     margin: 0;
     padding: 0;
     color: #061A30;
   }
   h3{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@
   }
   p{
     color: #4B5055;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
   }
 }
@@ -32,22 +32,19 @@
     align-items: flex-start;
   }
   p{
+    font-size: 20px !important;
+  }
+  h2{
     font-size: 18px !important;
   }
-  
-}
-@media screen and (max-width: 1394px) {
-  .boxCarousel{
-    align-items: flex-start;
-  }
-  p{
-    font-size: 18px !important;
+  h3{
+    font-size: 16px !important;
   }
 }
 
 @media screen and (max-width: 350px) {
   p{
-    font-size: 16px !important;
+    font-size: 18px !important;
   }
   h2{
     font-size: 16px !important;
