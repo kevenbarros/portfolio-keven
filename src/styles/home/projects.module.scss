@@ -63,11 +63,19 @@
   color: #FFFFFF !important;
 }
 @media screen and (max-width: 800px) {
+  .projectsContent{
+    height: 100%;
+  }
+  .ProjectsContentCarousel{
+    position: absolute;
+    top: 20px;
+  }
   .ProjectsTitle{
     display: block;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
+    margin-top: 60px;
     font-weight: 600;
     color: #061A30;
   }

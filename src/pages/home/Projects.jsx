@@ -53,7 +53,6 @@ export default function Projects() {
                       <h4 className={projeto.color == "white" && styles.colorWhite}>{projeto.subTitle}</h4>
                     </div>
                   </div>
-
                 </div>
               ))}
             </ScrollBox>
