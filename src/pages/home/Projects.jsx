@@ -37,7 +37,7 @@ export default function Projects() {
     <div className={styles.projectsBox} >
 
       <div className={styles.projectsContent}>
-        {/* <MouseParallax><h1>Projects</h1></MouseParallax> */}
+        <h1 className={styles.ProjectsTitle}>Projects</h1>
         <main className={styles.ProjectsBoxCarousel}>
           <div className={styles.ProjectsContentCarousel}>
             <ScrollBox>
