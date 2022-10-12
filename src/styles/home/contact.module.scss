@@ -79,6 +79,7 @@
 @media screen and (max-width: 800px) {
   .title{
     padding-top: 1px;
+    font-size: 38px !important;
   }
   .coffe{
     display: none;
@@ -95,5 +96,10 @@
     justify-content: center;
     align-items: center;
     gap: 0;
+    height: 100%;
+  }
+  form{
+    height: 100%;
+    padding-top: 130px;
   }
 }
