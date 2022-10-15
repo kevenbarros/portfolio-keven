@@ -82,6 +82,11 @@
   width: 100%;
 }
 @media screen and (max-width: 1800px) {
+  .formBox{
+    .title{
+      font-size: 38px !important;
+    }
+  }
   .coffe{
     max-width: 200px;
     width: 100%;
