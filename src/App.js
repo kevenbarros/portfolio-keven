@@ -39,10 +39,6 @@ function App() {
       < div className={styles.mainContent} >
         <Nav />
       </ div>
-      {/* <div className={styles.cursorBox} id="cursorBox">
-        <div className={styles.cursorBoxinternal} id="cursorBoxinternal">
-        </div>
-      </div> */}
       <div div className={`${styles.mainNavigationMobile} ${menuMobile ? styles.active : ''}`
       } onClick={() => setMenuMobile(!menuMobile)}>
         <span></span>
