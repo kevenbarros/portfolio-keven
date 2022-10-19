@@ -3,6 +3,7 @@ import { MouseParallax, ScrollParallax } from "react-just-parallax";
 import notbook from '../../images/notbook.png'
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { Line } from 'rc-progress';
 
 export default function Skills() {
   const [html, setHtml] = useState(0)
@@ -43,42 +44,42 @@ export default function Skills() {
       for (let o = 0; o <= percentage; o++) {
         setTimeout(() => {
           setHtml(o)
-        }, 8 * o)
+        }, 12 * o)
       }
     }
     if (skill === 'TypeScript') {
       for (let o = 0; o <= percentage; o++) {
         setTimeout(() => {
           setTypeScript(o)
-        }, 8 * o)
+        }, 12 * o)
       }
     }
     if (skill === 'JavaScript') {
       for (let o = 0; o <= percentage; o++) {
         setTimeout(() => {
           setJavaScript(o)
-        }, 8 * o)
+        }, 12 * o)
       }
     }
     if (skill === 'React') {
       for (let o = 0; o <= percentage; o++) {
         setTimeout(() => {
           setReact(o)
-        }, 8 * o)
+        }, 12 * o)
       }
     }
     if (skill === 'Vue') {
       for (let o = 0; o <= percentage; o++) {
         setTimeout(() => {
           setVue(o)
-        }, 8 * o)
+        }, 12 * o)
       }
     }
     if (skill === 'Git') {
       for (let o = 0; o <= percentage; o++) {
         setTimeout(() => {
           setGit(o)
-        }, 8 * o)
+        }, 12 * o)
       }
     }
   }
@@ -98,7 +99,7 @@ export default function Skills() {
   }, [path])
 
   return (
-    <div className={styles.skillsBox} >
+    <div className={styles.skillsBox}>
       <div className={styles.skillContent}>
         <main className={styles.skill}>
           <h1 className={styles.title}>skill</h1>
@@ -107,12 +108,7 @@ export default function Skills() {
               <h2>HTML/CSS</h2>
               <p>80%</p>
             </div>
-            <div>
-              <div className={styles.barBack}>
-                <div className={styles.barFront}
-                  style={{ width: `${html}%` }}></div>
-              </div>
-            </div>
+            <Line percent={html} trailWidth={1} strokeWidth={1} trailColor="#C4C4C4" strokeColor="#fff" strokeLinecap="round" />
           </div>
           <div className={styles.skillCard}>
             <div className={styles.skillTitle}>
@@ -120,10 +116,7 @@ export default function Skills() {
               <p>32%</p>
             </div>
             <div>
-              <div className={styles.barBack}>
-                <div className={styles.barFront}
-                  style={{ width: `${typeScript}%` }}></div>
-              </div>
+              <Line percent={typeScript} trailWidth={1} strokeWidth={1} trailColor="#C4C4C4" strokeColor="#fff" strokeLinecap="round" />
             </div>
           </div>
           <div className={styles.skillCard}>
@@ -132,10 +125,7 @@ export default function Skills() {
               <p>75%</p>
             </div>
             <div>
-              <div className={styles.barBack}>
-                <div className={styles.barFront}
-                  style={{ width: `${javaScript}%` }}></div>
-              </div>
+              <Line percent={javaScript} trailWidth={1} strokeWidth={1} trailColor="#C4C4C4" strokeColor="#fff" strokeLinecap="round" />
             </div>
           </div>
           <div className={styles.skillCard}>
@@ -144,10 +134,7 @@ export default function Skills() {
               <p>70%</p>
             </div>
             <div>
-              <div className={styles.barBack}>
-                <div className={styles.barFront}
-                  style={{ width: `${react}%` }}></div>
-              </div>
+              <Line percent={react} trailWidth={1} strokeWidth={1} trailColor="#C4C4C4" strokeColor="#fff" strokeLinecap="round" />
             </div>
           </div>
           <div className={styles.skillCard}>
@@ -156,10 +143,7 @@ export default function Skills() {
               <p>75%</p>
             </div>
             <div>
-              <div className={styles.barBack}>
-                <div className={styles.barFront}
-                  style={{ width: `${vue}%` }}></div>
-              </div>
+              <Line percent={vue} trailWidth={1} strokeWidth={1} trailColor="#C4C4C4" strokeColor="#fff" strokeLinecap="round" />
             </div>
           </div>
           <div className={styles.skillCard}>
@@ -168,10 +152,7 @@ export default function Skills() {
               <p>85%</p>
             </div>
             <div>
-              <div className={styles.barBack}>
-                <div className={styles.barFront}
-                  style={{ width: `${git}%` }}></div>
-              </div>
+              <Line percent={git} trailWidth={1} strokeWidth={1} trailColor="#C4C4C4" strokeColor="#fff" strokeLinecap="round" />
             </div>
           </div>
 

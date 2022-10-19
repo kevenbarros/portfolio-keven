@@ -4,15 +4,11 @@
   background-color: #FFA08E;
   display: flex;
   overflow: hidden;
-  position: relative;
 }
 .skillContent{
   display: flex;
   flex-direction: column;
-  align-items:flex-end;
-  justify-content: start;
-  padding: 2rem;
-  padding-right: 2rem;
+  padding: 2rem 5%;
   gap: 0.5rem;
   width: 100%;
   height: 100% ;
@@ -30,49 +26,66 @@
   justify-content: space-between;
   padding: 0 10px;
   color: #4B5055;
-  font-size: 14px;
   font-family: 'Poppins', sans-serif;
   h2{
     font-weight: 600;
     margin: 1rem 0;
+    font-size: 20px;
   } 
   p{
+    font-size: 20px;
     font-weight: 600; 
   }
-}
-
-//barras
-.barBack{
-  width: 100%;
-  background-color: #C4C4C4;
-  height: 8px;
-  border-radius: 50px;
-}
-
-.barFront{
-  background-color: #ffffff;
-  height: 8px;
-  border-radius: 50px;
 }
 
 .imageBox{
   height: 100%;
   width: 100%;
+  padding-right: -5%;
 }
 
 .imageContent{
   img{
     width: auto;
-    max-width: 150px ;
+    max-width: 200px ;
     position:absolute;
-    top:calc(0px - 3rem);
-    right: calc(0px - 2rem);
+    top:calc(0px - 1rem) !important;
+    right: calc((0px - 2rem) - 5%);
   }
 }
 
 .title{
   display: none;
 }
+
+@media screen and (max-width: 1800px) {
+  .skillCard{
+    margin: 0;
+  }
+  .skillTitle{
+    h2{
+      margin: 1px 0;
+      font-size: 16px;
+    }
+    p{
+      font-size: 16px;
+    }
+  }
+  .skillContent{
+    gap: 1px;
+
+  }
+  .imageContent{
+    img{
+      width: 100%;
+      max-width: 150px ;
+      position:absolute;
+      top:calc(0px - 3rem);
+      right: calc((0px - 2rem) - 5%);
+    }
+  }
+}
+
 @media screen and (max-width: 800px) {
   .imageBox{
     display: none;
